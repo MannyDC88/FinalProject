@@ -10,5 +10,5 @@ def emotion_detection(text_to_analyse):
             "text": text_to_analyse 
         } 
     }
-    response = requests.post(url, json = myobj, headers=header)
+    response = requests.post(url, json = myobj, headers=headers)
     return response.text
